@@ -1,0 +1,36 @@
+{
+  "name": "Jenkins_NodeJS_CI",
+  "version": "0.0.0",
+  "description": "Node.js CI Server with Jenkins",
+  "main": "index.js",
+  "scripts": {
+      "test": "istanbul cover tape \"test/tests.js\"",
+      "lint": "eslint index.js",
+      "ci-test": "istanbul cover tape \"test/tests.js\" > test.tap && istanbul report clover",
+      "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feeziman007/jenkins_nodejs_ci.git"
+  },
+  "keywords": [
+    "Jenkins",
+    "Node.js",
+    "CI"
+  ],
+  "author": "Hafeez Syed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feeziman007/jenkins_nodejs_ci/issues"
+  },
+  "homepage": "https://github.com/feeziman007/jenkins_nodejs_ci",
+  "dependencies": {
+    "chai": "~1.10.0",
+    "mocha": "~2.1.0"
+  },
+  "devDependencies": {
+    "tape": "~3.0.3",
+    "eslint": "~0.11.0",
+    "istanbul": "~0.3.5"
+  }
+}
