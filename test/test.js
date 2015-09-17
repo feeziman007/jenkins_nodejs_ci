@@ -10,7 +10,7 @@ test('summer', function (t) {
     t.end()
 })
 
-describe('Summer: ', function() {
+describe('Summer', function() {
     it('Value of "Winter" in "Summer" should be equal', function() {
         expect(winter(val1)).to.equal(result)
     })
