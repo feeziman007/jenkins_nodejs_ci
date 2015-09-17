@@ -4,9 +4,9 @@
   "description": "Node.js CI Server with Jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover tape \"test/tests.js\"",
+    "test": "istanbul cover tape \"test/test.js\"",
     "lint": "eslint index.js",
-    "ci-test": "istanbul cover tape \"test/tests.js\" > test.tap && istanbul report clover",
+    "ci-test": "istanbul cover tape \"test/test.js\" > test.tap && istanbul report clover",
     "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml",
 	"test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test/test.js"
   },
@@ -27,13 +27,12 @@
   "homepage": "https://github.com/hafeez-syed/jenkins_nodejs_ci",
   "dependencies": {
     "chai": "~1.10.0",
-    "mocha": "~2.1.0"
+    "mocha": "2.1.0"
   },
   "devDependencies": {
     "coveralls": "2.11.4",
     "eslint": "~0.11.0",
     "istanbul": "~0.3.5",
-    "mocha": "2.1.0",
     "tape": "~3.0.3"
   }
 }
