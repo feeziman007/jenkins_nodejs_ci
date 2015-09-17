@@ -8,7 +8,7 @@
     "lint": "eslint index.js",
     "ci-test": "istanbul cover ./node_modules/tape/bin/tape ./test/test.js > test.tap && istanbul report clover",
     "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml",
-	"test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test/test.js"
+	"test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test/mocha_test.js"
   },
   "repository": {
     "type": "git",
