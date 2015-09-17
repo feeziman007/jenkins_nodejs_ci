@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/hafeez-syed/jenkins_nodejs_ci/badge.svg?branch=master&service=github)](https://coveralls.io/github/hafeez-syed/jenkins_nodejs_ci?branch=master) [![Build Status](http://syed-hafeez.com:8080/job/TestProject_Jenkins_Nodejs_CI/badge/icon)]()
+[![Coverage Status](https://coveralls.io/repos/hafeez-syed/jenkins_nodejs_ci/badge.svg?branch=master&service=github)](https://coveralls.io/github/hafeez-syed/jenkins_nodejs_ci?branch=master) [![Build Status](http://syed-hafeez.com:8080/job/TestProject_Jenkins_Nodejs_CI/badge/icon)]() [![Build Status](https://travis-ci.org/feeziman007/jenkins_nodejs_ci.svg?branch=master)](https://travis-ci.org/feeziman007/jenkins_nodejs_ci)
 
 # Jenkins + Nodejs + Continuous Integration
 =======

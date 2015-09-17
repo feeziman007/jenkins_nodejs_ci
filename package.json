@@ -4,14 +4,15 @@
   "description": "Node.js CI Server with Jenkins",
   "main": "index.js",
   "scripts": {
-      "test": "istanbul cover tape \"test/tests.js\"",
-      "lint": "eslint index.js",
-      "ci-test": "istanbul cover tape \"test/tests.js\" > test.tap && istanbul report clover",
-      "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml"
+    "test": "istanbul cover tape \"test/tests.js\"",
+    "lint": "eslint index.js",
+    "ci-test": "istanbul cover tape \"test/tests.js\" > test.tap && istanbul report clover",
+    "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml",
+	"test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/feeziman007/jenkins_nodejs_ci.git"
+    "url": "https://github.com/hafeez-syed/jenkins_nodejs_ci.git"
   },
   "keywords": [
     "Jenkins",
@@ -21,16 +22,18 @@
   "author": "Hafeez Syed",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/feeziman007/jenkins_nodejs_ci/issues"
+    "url": "https://github.com/hafeez-syed/jenkins_nodejs_ci/issues"
   },
-  "homepage": "https://github.com/feeziman007/jenkins_nodejs_ci",
+  "homepage": "https://github.com/hafeez-syed/jenkins_nodejs_ci",
   "dependencies": {
     "chai": "~1.10.0",
     "mocha": "~2.1.0"
   },
   "devDependencies": {
-    "tape": "~3.0.3",
+    "coveralls": "2.11.4",
     "eslint": "~0.11.0",
-    "istanbul": "~0.3.5"
+    "istanbul": "~0.3.5",
+    "mocha": "2.1.0",
+    "tape": "~3.0.3"
   }
 }
