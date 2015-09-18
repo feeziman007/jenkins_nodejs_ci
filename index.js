@@ -1,6 +1,6 @@
 var toAdd = 23
-  , val1 = 40
-  , val2 = -40
+  , val1 = 400
+  , val2 = -400
   , result = val1 + val2
   , winter = summer(val2)
 function summer (sumVal) {
